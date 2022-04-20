@@ -1,5 +1,6 @@
 package qa.guru.allure;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
@@ -37,7 +38,7 @@ public class LambdaStepTest {
         });
 
         step("Проверяем наличие Issues c номером " + ISSUE_NUMBER, () -> {
-            $(withText("#1")).click();
+            $(withText("#1")).should(Condition.visible);
         });
 
     }
