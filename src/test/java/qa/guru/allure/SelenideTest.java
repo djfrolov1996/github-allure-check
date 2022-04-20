@@ -9,8 +9,6 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class SelenideTest {
 
-
-
     @Test
     public void testGithubIssue() {
         SelenideLogger.addListener("allure", new AllureSelenide());
