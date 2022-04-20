@@ -20,6 +20,6 @@ public class SelenideTest {
 
         $(By.linkText("djfrolov1996/lesson_3_dz")).click();
         $(By.partialLinkText("Issues")).click();
-        $(withText("#2")).click();
+        $(withText("#1")).click();
     }
 }
