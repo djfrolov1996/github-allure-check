@@ -29,7 +29,7 @@ public class LambdaStepTest {
         });
 
         step("Переходим по ссылке репозитория " + REPOSITORY, () -> {
-            $(linkText("djfrolov1996/lesson_3_dz")).click();
+            $(linkText(REPOSITORY)).click();
         });
 
         step("Кликаем на Issues", () -> {
