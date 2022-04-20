@@ -1,4 +1,5 @@
 package qa.guru.allure;
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
@@ -20,6 +21,6 @@ public class SelenideTest {
 
         $(By.linkText("djfrolov1996/lesson_3_dz")).click();
         $(By.partialLinkText("Issues")).click();
-        $(withText("#1")).click();
+        $(withText("#1")).should(Condition.visible);
     }
 }
